@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+    background: linear-gradient( hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: .9rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(238, 29%, 16%);
+    line-height: 1.5;
+}
+h1, p{
+    margin: 0;
+}
+hr{
+    border: none;
+    height: .0625rem;
+    background-color: hsl(240, 6%, 79%);
+}
+
+.card{
+    width: 50rem;
+    background-color: white;
+    padding: 5% 5% 5% 0;
+    border-radius: 2rem;
+    display: flex;
+    
+}
+.left-section{
+    position: relative;
+    width: 50%;
+}
+.women-img-div{
+    overflow: hidden;
+    
+    position: relative;
+}
+
+.women-img{
+    width: 100%;
+    position: relative;
+    right: 4.5rem;
+}
+.box-img{
+    width: 35%;
+    position: absolute;
+    left: -6rem;
+    top: 8rem;
+}
+.shadow-img{
+    width: 180%;
+    position: absolute;
+    left: -25rem;
+    top: -15rem;
+}
+
+.right-section{
+    width: 45%;
+    margin-left: auto;
+}
+
+.hide-answer{
+    display: none;
+}
+.show-answer{
+    display: block;
+    font-size: .75rem;
+    color: hsl(237, 12%, 33%);
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+}
+.question p{
+    margin: .5rem 0;
+}
+.question img{
+    width: .8rem;
+    height: .5rem;
+    position: relative;
+    top: .9rem;
+    right: .5rem;
+}
+.up-arrow{
+    rotate: 180deg;
+}
+
+
+.question:hover{
+    color:  hsl(14, 88%, 65%);
+    cursor: pointer;
+}
+.question-show{
+    color: black;
+}
+@media screen and (max-width: 40rem) {
+    .card{
+        flex-direction: column;
+        padding: 5%;
+        width: 17.5rem;
+        margin-top: 10rem;
+    }
+    .left-section{
+        position: relative;
+        width: 70%;
+        height: 5rem;
+        margin: auto;
+        top: -7.5rem;
+    }
+    .women-img-div{
+        
+        position: relative;
+    }
+    
+    .women-img{
+        width: 100%;
+        position: relative;
+        right: 0;
+    }
+    .box-img{
+        width: 35%;
+        position: absolute;
+        left: 0;
+        top: 3.5rem;
+    }
+    .shadow-img{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: -1rem;
+    }
+    .right-section{
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 62.5rem) and (min-width:40rem) {
+    .card{
+        flex-direction: column;
+        padding: 5%;
+        width: 35rem;
+        margin-top: 10rem;
+    }
+    .left-section{
+        position: relative;
+        width: 40%;
+        height: 5rem;
+        margin: auto;
+        top: -9rem;
+    }
+    .women-img-div{
+        
+        position: relative;
+    }
+    
+    .women-img{
+        width: 100%;
+        position: relative;
+        right: 0;
+    }
+    .box-img{
+        width: 35%;
+        position: absolute;
+        left: 0;
+        top: 4.5rem;
+    }
+    .shadow-img{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: -1rem;
+    }
+    .right-section{
+        width: 100%;
+        margin: auto;
+        min-height: 20.625rem;
+    }
+}
